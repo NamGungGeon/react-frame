@@ -1,6 +1,6 @@
 {
-  "homepage": "/template",
-  "name": "template",
+  "homepage": "/react-frame",
+  "name": "react-frame",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

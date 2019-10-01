@@ -10,6 +10,7 @@ class List extends Component {
         {title: 'Login', explain: 'Login Zone', onClick: ()=>{this.move('login')}},
         {title: 'UIKit', explain: 'UIKit Zone', onClick: ()=>{this.move('uikit')}},
         {title: 'Deving', explain: 'Express not finished dev function', onClick: ()=>{this.move('deving')}},
+        {title: 'Shape', explain: 'Image Shape Bundles', onClick: ()=>{this.move('shape')}},
     ]
 
     move= (category)=>{

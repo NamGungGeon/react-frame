@@ -1,0 +1,38 @@
+
+.group{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+.group> div{
+    border-radius: 4px;
+    border: 0.5px solid #00000011;
+    width: calc(15% - 16px);
+    margin: 8px;
+    padding: 8px;
+
+    text-align: center;
+    transition-property: transform, box-shadow;
+    transition-duration: 0.5s;
+
+}
+.group> div img{
+    width: 100%!important;
+    height: auto;
+}
+.group> div:hover{
+    transform: translateY(-4px);
+    box-shadow: 4px 8px 16px #00000022;
+
+}
+
+@media (max-width: 500px) {
+    .group> div{
+        width: calc(33% - 16px);
+    }
+
+
+}

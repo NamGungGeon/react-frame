@@ -29,8 +29,10 @@ class App extends Component {
                 }
                 <VerticalNavigation/>
                 <div className={'fullDisplay'}>
-                    <Route path={getPath("/sample")} component={Sample}/>
-                    <Route path={getPath("/guide")} component={Guide}/>
+                    <div className={'guideLine'}>
+                        <Route path={getPath("/sample")} component={Sample}/>
+                        <Route path={getPath("/guide")} component={Guide}/>
+                    </div>
                 </div>
             </div>
         );

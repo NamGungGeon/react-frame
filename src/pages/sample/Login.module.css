@@ -10,6 +10,9 @@
 .child{
     width: 400px;
 }
+.child{
+    text-align: center;
+}
 .form{
     text-align: left;
 }

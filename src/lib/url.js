@@ -1,5 +1,5 @@
 
-const root= '/template';
+const root= '/react-frame';
 
 export const getPath= (path)=>{
     if(path.includes(root))

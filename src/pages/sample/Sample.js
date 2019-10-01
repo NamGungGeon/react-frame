@@ -8,6 +8,7 @@ import List from "./List";
 import Login from "./Login";
 import UIKitZone from "./UIKitZone";
 import NotDev from "./NotDev";
+import Shape from "./Shape";
 
 class Sample extends Component {
     render() {
@@ -20,6 +21,7 @@ class Sample extends Component {
                 <Route exact path={getPath(`${match.url}/login`)} component={Login}/>
                 <Route exact path={getPath(`${match.url}/uikit`)} component={UIKitZone}/>
                 <Route exact path={getPath(`${match.url}/deving`)} component={NotDev}/>
+                <Route exact path={getPath(`${match.url}/shape`)} component={Shape}/>
             </div>
         );
     }

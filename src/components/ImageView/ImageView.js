@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import empty from '../../res/empty.png';
+import empty from '../../res/simple_icon.png';
 import style from './ImageView.module.css';
 
 class ImageView extends Component {
@@ -8,7 +8,7 @@ class ImageView extends Component {
         img: empty,
         shape: 'square',
         border: '0.6px solid #33333300',
-        shadow: true,
+        shadow: false,
         width: 0,
     };
     static propTypes= {
@@ -25,7 +25,7 @@ class ImageView extends Component {
             <img src={img} alt={'ImageView'} className={style[shape]+ ` ${shadow? 'shadowing': ''}`}
                 style={{
                     border: border,
-                    width: width,
+                    width: width? width+ 'px': 'auto',
                     height: 'auto'
                 }}/>
         );
